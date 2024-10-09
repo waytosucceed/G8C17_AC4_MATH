@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Activity 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="icon" type="image/x-icon" href="./assests/logo/Logo_last.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+  .right-container {
+  position: relative;
+  width: 80%;
+}
+
+.image-container {
+  position: relative;
+  
+}
+.right-container img{
+  height: auto;
+}
+
+.background-image {
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the start */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box; /* Ensure padding doesn't affect overall size */
+}
+
+.second-image {
+  position: absolute;
+  top: 36%;
+  width: 70%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  /* Space between question and second image */
+  display: none;
+}
+#story-container{
+ font-size: 2vw;
+  font-weight: bold;
+}
+#start-btn{
+  margin-top: 5%;
+}
+
+
+</style>
+  </head>
+  <body>
+    
+ 
+    <audio id="cheers">
+      <source src="./assests/audio/cheers.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="points">
+      <source src="./assests/audio/points.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="fail">
+      <source src="./assests/audio/fail.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="container">
+      <div class="header" style="background-color:white;width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0);  padding-bottom:10px;">
+        <img src="assests/logo/Logo_last.png" width="5%" style="float:left; margin-top:1.5%;" class="img-responsive">
+        <span> <img src="assests/logo/header.png" width="30%" height="80%" class="img-responsive"></span>
+      </div>
+      
+      <div class="question-container">
+        <div class="question-numbers" id="question-numbers">
+          <!-- Question numbers will be dynamically added here -->
+        </div>
+        
+        <div class="content"> 
+          
+          <div class="right-container">
+            <div class="image-container">
+              <img src="./assests/story/1.png" alt="thinking" class="background-image"/>
+              <div class="overlay">
+                <div id="question" class="question"></div>
+                <img src="" alt="Second Image" class="second-image"/> <!-- Update this source as necessary -->
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="left-container">
+            <div id="story-container">
+              <!-- Content from story.html will be inserted here -->
+            </div>
+            <div id="answer-buttons"  class="options hide">
+                <!-- Answer buttons dynamically added here -->
+
+            </div>
+            <div id="feedback-container" class="feedback hide"></div>
+
+            <div class="buttons">
+                <button id="start-btn" class="start-btn mybtn">Start</button>
+
+                <button id="next-btn" class="next-btn mybtn hide">Next</button>
+                <!-- <button id="next-btn" class="next-btn btn ">Hide</button> -->
+
+              <!-- Restart button will be dynamically added here -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+<!-- 
+
+json file like this 
+
+[ {
+    "question": (q here),
+    "options": ["op here", "op here"],
+    "correct": (index here)
+  }] -->

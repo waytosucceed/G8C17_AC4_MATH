@@ -1,0 +1,57 @@
+[
+    {
+        "questionNo": "Q1",
+        "question": "Simplify the expression (3<sup>4</sup>.3<sup>2</sup>)<sup>3</sup>",
+        "options": [
+            "3<sup>11</sup>",
+            "3<sup>18</sup>",
+            "3<sup>9</sup>",
+            "3<sup>24</sup>"
+        ],
+        "correct": 1
+    },
+    {
+        "questionNo": "Q2",
+        "question": "What is the result of (2<sup>5</sup>.2<sup>3</sup>)<sup>4</sup>",
+        "options": [
+            "2<sup>12</sup>",
+            "2<sup>60</sup>",
+            "2<sup>32</sup>",
+            "2<sup>28</sup>"
+        ],
+        "correct": 2
+    },
+    {
+        "questionNo": "Q3",
+        "question": "Evaluate (4<sup>3</sup>.4<sup>5</sup>)<sup>2</sup>",
+        "options": [
+            "4<sup>5</sup>",
+            "4<sup>10</sup>",
+            "4<sup>30</sup>",
+            "4<sup>16</sup>"
+        ],
+        "correct": 3
+    },
+    {
+        "questionNo": "Q4",
+        "question": "Simplify (7<sup>3</sup>.7<sup>4</sup>)<sup>-2</sup>",
+        "options": [
+            "7<sup>14</sup>",
+            "7<sup>40</sup>",
+            "7<sup>-14</sup>",
+            "7<sup>-24</sup>"
+        ],
+        "correct": 2
+    },
+    {
+        "questionNo": "Q5",
+        "question": "Simplify the expression (8<sup>3</sup>.8<sup>5</sup>)<sup>-2</sup>",
+        "options": [
+            "(<sup>1</sup>&frasl;<sub>8</sub>)<sup>16</sup>",
+            "8<sup>30</sup>",
+            "8<sup>16</sup>",
+            "8<sup>-30</sup>"
+        ],
+        "correct": 0
+    }
+]
